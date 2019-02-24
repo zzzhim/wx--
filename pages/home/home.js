@@ -1,18 +1,22 @@
-// pages/home/home.js
+import $request from "../../utils/request.js"
+
+
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-
+        movieData: {}
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
+        $request('/classic/latest').then(res => {
+            console.log(res)
+        })
     },
 
     /**
