@@ -1,1 +1,56 @@
-/* pages/home/home.wxss */
+.home {
+
+}
+
+.home-banner {
+    position: relative;
+}
+
+.home-banner > image {
+    width: 100vw;
+	height: 67vw;
+	background-color: #000000;
+	/* opacity: 0.8; */
+}
+
+.home-banner-text {
+    width: 6vw;
+    height: auto;
+    display: flex;
+    flex-direction: column; 
+    position: absolute;
+    left: 4vw;
+    bottom: 0px;
+    transform: translateY(40%);
+}
+
+.home-banner-text > text {
+	font-size: 7vw;
+	color: #000000;
+	font-family: PingFangSC-Ultralight;
+}
+
+.home-banner-text > text:last-of-type {
+    width: 6vw;
+    text-indent: 4vw;
+    position: absolute;
+    bottom: -4vw;
+}
+
+.home-footer {
+    width: 100vw;
+    height: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-footer-text {
+    width: 74.4vw;
+    font-family: PingFang-SC-Regular;
+	font-size: 4.53vw;
+	letter-spacing: 0vw;
+	color: #0f0f0f;
+    margin-top: 15.87vw;
+}

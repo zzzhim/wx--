@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+    "usingComponents": {
+        "v-head-component": "/pages/components/Head/Head",
+        "v-music-component": "/pages/components/Music/Music"
+    }
 }

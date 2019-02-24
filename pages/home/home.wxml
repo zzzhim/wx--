@@ -1,4 +1,22 @@
-<view>
+<view class='home'>
     <!-- 头部 -->
-    <view></view>
+    <v-head-component />
+
+    <!-- banner -->
+    <view class='home-banner'>
+        <image src='/assets/movie/banner.png'></image>
+
+        <view class='home-banner-text'>
+            <text>电</text>
+            <text>影</text>
+            <text>。</text>
+        </view>
+    </view>
+
+    <view class='home-footer'>
+        <view class='home-footer-text'>人生不能像做菜，把所有的料准备好了才下锅。</view>
+
+        <!-- 播放器 -->
+        <v-music-component />
+    </view>
 </view>

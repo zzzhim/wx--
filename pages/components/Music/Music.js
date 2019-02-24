@@ -1,4 +1,4 @@
-// pages/components/Head.js
+// pages/components/Music.js
 Page({
 
     /**

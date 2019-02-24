@@ -1,9 +1,10 @@
 {
     "pages": [
-        "pages/components/Head",
         "pages/home/home",
         "pages/book/book",
-        "pages/like/like"
+        "pages/like/like",
+        "pages/components/Head/Head",
+        "pages/components/Music/Music"
     ],
     "window": {
         "backgroundTextStyle": "light",

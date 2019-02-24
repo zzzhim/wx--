@@ -1,0 +1,14 @@
+.music {
+    width: 78.4vw;
+	height: 10.67vw;
+	background-color: #f7f7f7;
+    margin-bottom: 5.47vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.music-up, .music-under {
+    width: 3.07vw;
+	height: 4.53vw;
+}
