@@ -1,4 +1,4 @@
-// pages/home/hone.js
+// pages/like/like.js
 Page({
 
     /**
