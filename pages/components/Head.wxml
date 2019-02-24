@@ -1,0 +1,25 @@
+<!-- 流行页面头部组件 -->
+<view>
+    <view class='header'>
+        <view class='header-left'>
+            <!-- 排名 -->
+            <view class='header-left-ranking'>
+                <text>No.</text>
+                <text>08</text>
+            </view>
+            <view class='header-left-hr'></view>
+            <!-- 日期 -->
+            <view class='header-left-date'>
+                <text>二月</text>
+                <text>2019</text>
+            </view>
+        </view>
+        <view class='header-right'>
+            <view class='header-right-like'>
+                <image src='/assets/book-par/like.png'></image>
+                <text>43811111</text>
+            </view>
+            <image src='/assets/book-par/share.png' class='header-right-share'></image>
+        </view>
+    </view>
+</view>
