@@ -15,7 +15,8 @@ Page({
      */
     onLoad: function (options) {
         $request('/classic/latest').then(res => {
-            console.log(res)
+            this.setData({ movieData: res })
+            console.log(this.data.movieData)
         })
     },
 

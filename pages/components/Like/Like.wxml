@@ -1,0 +1,4 @@
+<view class='header-right-like'>
+    <image src='/assets/book-par/like.png'></image>
+    <text>{{ like }}</text>
+</view>

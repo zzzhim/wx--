@@ -1,5 +1,5 @@
 Component({
     properties: {
-        title: String
+        like: String
     }
 })

@@ -1,11 +1,5 @@
 <view class='music'>
     <image class='music-up' src="/assets/movie/up.png"></image>
-    <!-- <audio>
-        id=""
-        src=""
-        name=""
-        loop="true"
-    </audio> -->
-    <text>李安《饮食男女》</text>
+    <text>{{ title }}</text>
     <image class='music-under' src="/assets/movie/under.png"></image>
 </view>

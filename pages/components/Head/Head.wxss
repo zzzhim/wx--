@@ -74,26 +74,6 @@
     align-items: center;
 }
 
-.header-right-like {
-    height: 13vw;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.header-right-like > image {
-    width: 4vw;
-    height: 4vw;
-}
-
-.header-right-like > text {
-    font-size: 2vw;
-	color: #bbbbbb;    
-    position: absolute;
-    top: 4vw;
-    left: 4vw;
-}
-
 .header-right-share {
     width: 4vw;
     height: 4vw;

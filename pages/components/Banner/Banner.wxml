@@ -1,0 +1,10 @@
+<!-- banner -->
+<view class='home-banner'>
+    <image src='{{ banner }}'></image>
+
+    <view class='home-banner-text'>
+        <text style='color: #ffffff;'>电</text>
+        <text>影</text>
+        <text>。</text>
+    </view>
+</view>

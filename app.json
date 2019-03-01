@@ -4,7 +4,9 @@
         "pages/book/book",
         "pages/like/like",
         "pages/components/Head/Head",
-        "pages/components/Music/Music"
+        "pages/components/Music/Music",
+        "pages/components/Banner/Banner",
+        "pages/components/Like/Like"
     ],
     "window": {
         "backgroundTextStyle": "light",

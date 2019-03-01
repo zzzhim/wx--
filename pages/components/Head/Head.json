@@ -1,3 +1,6 @@
 {
-  "component": true
+  "component": true,
+  "usingComponents": {
+        "v-like-component": "/pages/components/Like/Like"
+    }
 }

@@ -18,7 +18,7 @@ function $request(url, data, method = "get", header = {
                 if(res.statusCode == 200) {
                     resolve(res.data)
                 }else {
-                    resolve(res.statusCode)
+                    reject(res)
                 }
             },
             fail(err) {
