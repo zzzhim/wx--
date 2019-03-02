@@ -56,7 +56,7 @@ Component({
             if(this.data.bool) {
                 this.data.music.src = this.properties.movieData.url
                 this.data.music.title = this.properties.movieData.title
-
+                const that = this
                 wx.setStorage({
                     key: 'play',
                     data: {
@@ -64,7 +64,7 @@ Component({
                         play: true
                     },
                     success() {
-                        this.data.music.play()
+                        that.data.music.play()
                     }
                 })
             }else {
