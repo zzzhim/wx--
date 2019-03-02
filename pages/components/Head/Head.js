@@ -11,6 +11,7 @@ Component({
     ready() {
     },
     methods: {
+        // 过滤日期
         filtersData() {
             const obj = Object.keys(this.properties.movieData)
             if (obj.length > 0) {
@@ -23,6 +24,17 @@ Component({
         },
         onClick() {
             this.triggerEvent('on-click')
+        },
+        onShare() {
+            wx.hideShareMenu({
+                withShareTicket: true,
+                success(success) {
+                    console.log(success)
+                },
+                fail(err) {
+                    console.log('失败' + err)
+                }
+            })
         }
     },
     observers: {

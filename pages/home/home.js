@@ -20,7 +20,6 @@ Page({
     GteData() {
         $request('/classic/latest').then(res => {
             this.setData({ movieData: res })
-            console.log(this.data.movieData)
         })
     }
 })

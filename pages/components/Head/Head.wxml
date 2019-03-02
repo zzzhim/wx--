@@ -19,11 +19,14 @@
                 bind:on-click="onClick"
                 movieData="{{ movieData }}"
             />
-            <image
-                src='/assets/book-par/share.png'
-                class='header-right-share'
-                >
-            </image>
+            
+            <button class='header-right-btn' size='mini' open-type="share">
+                <image
+                    src='/assets/book-par/share.png'
+                    class='header-right-share'
+                    >
+                </image>
+            </button>
         </view>
     </view>
 </view>

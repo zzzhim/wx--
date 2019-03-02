@@ -74,8 +74,22 @@
     align-items: center;
 }
 
+.header-right-btn {
+    position: relative;
+    width: 3.73vw;
+    height: 3.73vw;
+    background-color: transparent;
+    margin-left: 10.67vw;
+}
+
+.header-right-btn::after {
+    border: none;
+}
+
 .header-right-share {
-    width: 4vw;
-    height: 4vw;
-    margin-left: 11vw;
+    width: 3.73vw;
+    height: 3.73vw;
+    position: absolute;
+    top: 0px;
+    left: 0.8vw;
 }
