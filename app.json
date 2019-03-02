@@ -6,7 +6,8 @@
         "pages/components/Head/Head",
         "pages/components/Music/Music",
         "pages/components/Banner/Banner",
-        "pages/components/Like/Like"
+        "pages/components/Like/Like",
+        "pages/components/Player/Player"
     ],
     "window": {
         "backgroundTextStyle": "light",

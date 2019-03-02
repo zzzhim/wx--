@@ -1,0 +1,10 @@
+<!-- 播放器 -->
+<view class='home-banner'>
+    <image src='{{ banner }}'></image>
+
+    <view class='home-banner-text'>
+        <text>音</text>
+        <text>乐</text>
+        <text>。</text>
+    </view>
+</view>

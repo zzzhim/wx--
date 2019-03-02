@@ -1,0 +1,36 @@
+.home-banner {
+    position: relative;
+}
+
+.home-banner > image {
+	width: 58.93vw;
+	height: 56.53vw;
+    background-color: #000000;
+    border-radius: 50%;
+    margin: 0px auto;
+    display: block;
+}
+
+.home-banner-text {
+    width: 6vw;
+    height: auto;
+    display: flex;
+    flex-direction: column; 
+    position: absolute;
+    left: 4vw;
+    bottom: 0px;
+    transform: translateY(40%);
+}
+
+.home-banner-text > text {
+	font-size: 7vw;
+	color: #000000;
+	font-family: PingFangSC-Ultralight;
+}
+
+.home-banner-text > text:last-of-type {
+    width: 6vw;
+    text-indent: 4vw;
+    position: absolute;
+    bottom: -4vw;
+}

@@ -6,9 +6,10 @@
         index="{{ movieData.index }}"
         id="{{ movieData.id }}"
         pubdate="{{ movieData.pubdate }}"
-        />
+    />
 
-    <v-banner-component banner="{{ movieData.image }}"/>
+    <v-banner-component banner="{{ movieData.image }}" wx:if="{{ movieData.type != 200 }}" />
+    <v-player-component wx:else />
 
     <view class='home-footer'>
         <view class='home-footer-text'>{{ movieData.content }}</view>
