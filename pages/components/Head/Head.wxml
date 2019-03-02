@@ -5,7 +5,7 @@
             <!-- 排名 -->
             <view class='header-left-ranking'>
                 <text>No.</text>
-                <text>{{ index.length == 1 ? '0' + index : index }}</text>
+                <text>{{ movieData.index.length == 1 ? '0' + movieData.index : movieData.index }}</text>
             </view>
             <view class='header-left-hr'></view>
             <!-- 日期 -->
@@ -15,8 +15,15 @@
             </view>
         </view>
         <view class='header-right'>
-            <v-like-component like="{{ fav }}"/>
-            <image src='/assets/book-par/share.png' class='header-right-share'></image>
+            <v-like-component
+                bind:on-click="onClick"
+                movieData="{{ movieData }}"
+            />
+            <image
+                src='/assets/book-par/share.png'
+                class='header-right-share'
+                >
+            </image>
         </view>
     </view>
 </view>

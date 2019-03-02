@@ -13,16 +13,13 @@ function $request(url, data, method = "get", header = {
         wx.request({
             url: api + url,
             method: method,
+            data: data,
             header: header,
             success(res) {
-                if(res.statusCode == 200) {
-                    resolve(res.data)
-                }else {
-                    reject(res)
-                }
+                resolve(res.data)
             },
             fail(err) {
-                fail(err)
+                reject(err)
             }
         })    
     })

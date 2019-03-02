@@ -1,4 +1,15 @@
 <view class='header-right-like'>
-    <image src='/assets/book-par/like.png'></image>
-    <text>{{ like }}</text>
+    <image
+        wx:if='{{ movieData.like_status == 0 }}'
+        src='/assets/book-par/like.png'
+        bindtap='onClickLike'
+        >
+    </image>
+    <image
+        wx:else
+        src='/assets/movie/like.png'
+        bindtap='onClickCancel'
+        >
+    </image>
+    <text>{{ movieData.fav_nums }}</text>
 </view>
