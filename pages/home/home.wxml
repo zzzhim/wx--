@@ -3,12 +3,23 @@
     <!-- 头部 -->
     <v-head-component bind:on-click="GteData" movieData="{{ movieData }}" />
 
-    <v-banner-component banner="{{ movieData.image }}" wx:if="{{ movieData.type != 200 }}" />
-    <v-player-component wx:else />
+    <v-banner-component movieData="{{ movieData }}" wx:if="{{ movieData.type != 200 }}" />
+    <v-player-component movieData="{{ movieData }}" wx:else />
 
     <view class='home-footer'>
-        <view class='home-footer-text'>{{ movieData.content }}</view>
+        <!-- 内容 -->
+        <view
+            style="{{ movieData.type == 100 ? 'text-align: left' : '' }}"
+            class='home-footer-text'
+            >
+            {{ movieData.content }}
+        </view>
         <!-- 播放器 -->
-        <v-music-component title="{{ movieData.title }}"/>
+        <v-music-component
+            movieData="{{ movieData }}"
+            activeIndex="{{ activeIndex }}"
+            bind:on-previous="GetDataPrevious"
+            bind:on-next="GetDataNext"
+        />
     </view>
 </view>

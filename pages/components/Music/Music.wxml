@@ -1,5 +1,29 @@
 <view class='music'>
-    <image class='music-up' src="/assets/movie/up.png"></image>
-    <text>{{ title }}</text>
-    <image class='music-under' src="/assets/movie/under.png"></image>
+    <image
+        class='music-up'
+        src="/assets/movie/up.png"
+        wx:if="{{ movieData.index == activeIndex }}"
+        >
+    </image>
+    <image
+        class='music-up-active'
+        src="/assets/movie/up.png"
+        bindtap='onNext'
+        wx:else
+        >
+    </image>
+    <text class='music-text'>{{ movieData.title }}</text>
+    <image
+        class='music-under'
+        src="/assets/movie/under.png"
+        wx:if="{{ movieData.index == 1 }}"
+        >
+    </image>
+    <image
+        class='music-under-active'
+        src="/assets/movie/under.png"
+        bindtap='onPrevious'
+        wx:else
+        >
+    </image>
 </view>

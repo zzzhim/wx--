@@ -1,10 +1,16 @@
 <!-- banner -->
 <view class='home-banner'>
-    <image src='{{ banner }}'></image>
+    <image src='{{ movieData.image }}'></image>
 
-    <view class='home-banner-text'>
+    <view class='home-banner-text' wx:if="{{ movieData.type == 100 }}">
         <text style='color: #ffffff;'>电</text>
         <text>影</text>
+        <text>。</text>
+    </view>
+
+    <view class='home-banner-text' wx:else>
+        <text style='color: #ffffff;'>句</text>
+        <text>子</text>
         <text>。</text>
     </view>
 </view>

@@ -1,21 +1,24 @@
 .home {
-
+    font-size: 0px;
 }
 
 .home-footer {
     width: 100vw;
-    height: 70vw;
+    height: 70.53vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
 
 .home-footer-text {
     width: 74.4vw;
+    height: 54.4vw;
+	color: #0f0f0f;
+    padding-top: 15.87vw;
     font-family: PingFang-SC-Regular;
 	font-size: 4.53vw;
 	letter-spacing: 0vw;
-	color: #0f0f0f;
-    margin-top: 15.87vw;
+    text-align: center;
+    box-sizing: border-box;
 }

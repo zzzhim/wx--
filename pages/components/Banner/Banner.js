@@ -1,7 +1,5 @@
 Component({
     properties: {
-        banner: {
-            type: String
-        }
+        movieData: Object
     }
 })

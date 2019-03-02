@@ -1,14 +1,26 @@
 .music {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 78.4vw;
 	height: 10.67vw;
-	background-color: #f7f7f7;
+    font-size: 3.2vw;
     margin-bottom: 5.47vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    padding: 0vw 2.67vw;
+	background-color: #f7f7f7;
+}
+
+.music-text {
+    width: 66.93vw;
+    display: block;
+    text-align: center;
+}
+
+.music-up-active, .music-under-active,.music-up, .music-under {
+    width: 3.07vw;
+	height: 4.53vw;
 }
 
 .music-up, .music-under {
-    width: 3.07vw;
-	height: 4.53vw;
+    opacity: 0.1;
 }
