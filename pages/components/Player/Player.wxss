@@ -1,9 +1,12 @@
 .home-banner {
     position: relative;
 	height: 67vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.home-banner > image {
+.home-banner-img {
 	width: 58.93vw;
 	height: 56.53vw;
     background-color: #000000;
@@ -34,4 +37,14 @@
     text-indent: 4vw;
     position: absolute;
     bottom: -4vw;
+}
+
+.home-banner-music {
+    width: 15.87vw;
+    height: 15.87vw;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

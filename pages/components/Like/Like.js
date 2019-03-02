@@ -2,7 +2,13 @@ import $request from "../../../utils/request.js"
 
 Component({
     properties: {
-        movieData: Object
+        movieData: {
+            type: Object,
+            value: {
+                like_status: 0,
+                fav_nums: 0
+            }
+        }
     },
 
     data: {
@@ -49,10 +55,15 @@ Component({
 
     observers: {
         movieData(val) {
-            this.setData({
-                like_status: val.like_status,
-                fav_nums: val.fav_nums
-            })
+            if (val != null) {
+                const key = Object.keys(val)
+                if (key.length != 0) {
+                    this.setData({
+                        like_status: val.like_status,
+                        fav_nums: val.fav_nums
+                    })
+                }
+            }
         }
     }
 })

@@ -1,10 +1,25 @@
 <!-- 播放器 -->
 <view class='home-banner'>
-    <image src='{{ movieData.image }}'></image>
+    <image class='home-banner-img' src='{{ movieData.image }}'></image>
 
     <view class='home-banner-text'>
         <text>音</text>
         <text>乐</text>
         <text>。</text>
     </view>
+
+    <image
+        wx:if="{{ play }}"
+        class='home-banner-music'
+        src='../../../assets/music/play.png'
+        bindtap='onOut'
+        >
+    </image>
+    <image
+        wx:else
+        class='home-banner-music'
+        src='../../../assets/music/out.png'
+        bindtap='onPlay'
+        >
+    </image>
 </view>

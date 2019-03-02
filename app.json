@@ -9,6 +9,9 @@
         "pages/components/Like/Like",
         "pages/components/Player/Player"
     ],
+    "requiredBackgroundModes": [
+        "audio"
+    ],
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#f5f5f5",
