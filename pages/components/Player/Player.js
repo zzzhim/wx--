@@ -12,21 +12,16 @@ Component({
     },
 
     ready() {
-        const music = wx.getStorageSync('music')
+        const play = wx.getStorageSync('play')
 
         this.data.music = wx.getBackgroundAudioManager()
 
-        if(music.index == this.data.movieData.index) {
-            const play = wx.getStorageSync('play')
-
+        if (play.index == this.data.movieData.index) {
             if (play.play) {
-                this.data.music.src = this.properties.movieData.url
-                this.data.music.title = this.properties.movieData.title
-
-                this.data.music.startTime = music.time
+                this.setData({ play: true })
+            }else {
+                this.setData({ play: false })
             }
-
-            this.setData({ play: play.play })
         }
 
         // 监听背景音频播放事件
@@ -43,13 +38,6 @@ Component({
         // 监听背景音频暂停事件
         this.data.music.onPause(() => {
             this.setData({ play: false })
-
-            const obj = wx.getStorageSync('play')
-            obj.play = false
-            wx.setStorage({
-                key: 'play',
-                data: obj
-            })
         })
 
         // 监听背景音频自然播放结束事件
@@ -61,45 +49,42 @@ Component({
         this.data.music.onError(() => {
             this.setData({ bool: true, play: false })
         })
-        
-        // 监听背景音频播放进度更新事件
-        this.data.music.onTimeUpdate(() => {
-            const play = wx.getStorageSync('play')
-
-            const obj = {
-                index: play.index,
-                time: this.data.music.currentTime
-            }
-
-            wx.setStorage({
-                key: 'music',
-                data: obj
-            })
-        })
-
     },
     
     methods: {
         onPlay() {
             if(this.data.bool) {
-                this.data.music.title = this.properties.movieData.title
                 this.data.music.src = this.properties.movieData.url
+                this.data.music.title = this.properties.movieData.title
 
                 wx.setStorage({
                     key: 'play',
                     data: {
                         index: this.data.movieData.index,
                         play: true
+                    },
+                    success() {
+                        this.data.music.play()
                     }
                 })
-
-                this.data.music.play()
             }else {
                 this.data.music.play()
             }
         },
+
         onOut() {
             this.data.music.pause()
+        }
+    },
+    
+    observers: {
+        play(val) {
+            const obj = wx.getStorageSync('play')
+            obj.play = val
+            wx.setStorage({
+                key: 'play',
+                data: obj
+            })
         }
     }
 })
