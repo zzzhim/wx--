@@ -1,7 +1,7 @@
 
 <view class='home'>
     <!-- 头部 -->
-    <v-head-component bind:on-click="GteData" movieData="{{ movieData }}" />
+    <v-head-component bind:on-click="GetCertain" movieData="{{ movieData }}" />
 
     <v-banner-component movieData="{{ movieData }}" wx:if="{{ movieData.type != 200 }}" />
     <v-player-component movieData="{{ movieData }}" wx:else />
