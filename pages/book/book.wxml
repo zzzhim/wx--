@@ -1,2 +1,17 @@
-<!--pages/book/book.wxml-->
-<text>pages/book/book.wxml</text>
+<view class="book">
+    <view class="book-head"></view>
+
+    <!-- <text class="book-title">精选</text> -->
+
+    <view class="book-container">
+        <view class="book-container-block">
+            <v-book-component />
+        </view>
+        <view class="book-container-block">
+            <v-book-component />
+        </view>
+        <view class="book-container-block">
+            <v-book-component />
+        </view>
+    </view>
+</view>

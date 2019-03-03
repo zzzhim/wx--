@@ -1,1 +1,24 @@
-/* pages/book/book.wxss */
+.book {
+    background-color: #f7f7f7;
+    min-height: 100vh;
+}
+
+.book-head {
+    width: 99.87vw;
+	height: 14.4vw;
+	background-color: #ffffff;
+	box-shadow: 0vw 0.27vw 1.33vw 0vw rgba(203, 203, 203, 0.1);
+    margin-bottom: 12.67vw;
+}
+
+.book-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 12vw;
+}
+
+.book-container-block {
+   margin-top: 8vw;
+}

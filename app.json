@@ -1,13 +1,14 @@
 {
     "pages": [
-        "pages/home/home",
         "pages/book/book",
+        "pages/home/home",
         "pages/like/like",
         "pages/components/Head/Head",
         "pages/components/Music/Music",
         "pages/components/Banner/Banner",
         "pages/components/Like/Like",
-        "pages/components/Player/Player"
+        "pages/components/Player/Player",
+        "pages/components/Book/Book"
     ],
     "requiredBackgroundModes": [
         "audio"

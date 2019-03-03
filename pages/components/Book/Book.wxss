@@ -1,0 +1,53 @@
+.book-container-box {
+    width: 32.13vw;
+	height: 48.13vw;
+    background-color: #ffffff;
+	box-shadow: 0.4vw 0.69vw 2.67vw 0vw rgba(171, 171, 171, 0.16);
+	border-radius: 1.07vw;
+	font-family: PingFang-SC-Regular;
+	letter-spacing: 0vw;
+	font-weight: normal;
+	font-stretch: normal;
+    box-sizing: border-box;
+    font-size: 0vw;
+}
+
+.book-container-box-banner {
+    width: 32.13vw;
+    height: 29.73vw;
+    background-color: #cccccc;
+}
+
+.book-container-box-title {
+    width: 32.13vw;
+	font-size: 3.2vw;
+	line-height: 1;
+	color: #1f1f1f;
+    margin-top: 2.67vw;
+    margin-bottom: 1.2vw;
+    padding-left: 2.67vw;
+    box-sizing: border-box;
+}
+
+.book-container-box-name {
+    width: 32.13vw;
+	font-size: 2.67vw;
+	line-height: 1;
+	color: #999999;
+    box-sizing: border-box;
+    padding-left: 2.67vw;
+
+}
+
+.book-container-box-info {
+    width: 32.13vw;
+	font-size: 2.67vw;
+	line-height: 1;
+	letter-spacing: -0.13vw;
+	color: #bbbbbb;
+    margin-top: 3.6vw;
+    margin-bottom: 2.4vw;
+    padding-right: 2.67vw;
+    box-sizing: border-box;
+    text-align: right;
+}
