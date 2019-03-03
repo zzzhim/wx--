@@ -20,5 +20,5 @@
 }
 
 .book-container-block {
-   margin-top: 8vw;
+   margin-bottom: 8vw;
 }

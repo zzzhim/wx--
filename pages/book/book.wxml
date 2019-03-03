@@ -4,14 +4,12 @@
     <!-- <text class="book-title">精选</text> -->
 
     <view class="book-container">
-        <view class="book-container-block">
-            <v-book-component />
-        </view>
-        <view class="book-container-block">
-            <v-book-component />
-        </view>
-        <view class="book-container-block">
-            <v-book-component />
+        <view
+            class="book-container-block"
+            wx:for="{{ bookData }}"
+            wx:key="{{ index }}"
+            >
+            <v-book-component book="{{ item }}" />
         </view>
     </view>
 </view>

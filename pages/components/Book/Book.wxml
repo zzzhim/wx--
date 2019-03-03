@@ -1,12 +1,12 @@
 <view class="book-container-box">
     <image
         class="book-container-box-banner"
-        src=''
+        src='{{ book.image }}'
         >
     </image>
-    <view class="book-container-box-title">爱你就像爱生命</view>
-    <text class="book-container-box-name">李银河</text>
+    <view class="book-container-box-title">{{ book.title }}</view>
+    <text class="book-container-box-name">{{ book.author }}</text>
     <view class="book-container-box-info">
-        {{ '233' }} 喜欢 · {{ '68' }} 短评
+        {{ book.fav_nums }} 喜欢 · {{ comment }} 短评
     </view>
 </view>
