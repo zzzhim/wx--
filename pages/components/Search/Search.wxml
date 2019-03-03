@@ -1,0 +1,15 @@
+<view class='search'>
+    <input
+        placeholder-class="search-placeholder"
+        placeholder="搜索图书名称"
+        class="search-input"
+        type="text"
+        >
+        
+    </input>
+    <image
+        class="search-icon"
+        src="../../../assets/book/search.png"
+        >
+    </image>
+</view>

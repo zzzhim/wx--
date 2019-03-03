@@ -1,6 +1,7 @@
 .book {
     background-color: #f7f7f7;
     min-height: 100vh;
+    position: relative;
 }
 
 .book-head {
@@ -9,6 +10,16 @@
 	background-color: #ffffff;
 	box-shadow: 0vw 0.27vw 1.33vw 0vw rgba(203, 203, 203, 0.1);
     margin-bottom: 12.67vw;
+}
+
+.book-recommend {
+    width: 14.27vw;
+	height: 4.27vw;
+    display: block;
+    position: absolute;
+    top: 19.87vw;
+    left: 49%;
+    transform: translateX(-50%);
 }
 
 .book-container {

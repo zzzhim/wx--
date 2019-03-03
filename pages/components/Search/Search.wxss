@@ -1,0 +1,43 @@
+.search {
+    width: 99.87vw;
+	height: 14.4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: #ffffff;
+	box-shadow: 0vw 0.27vw 1.33vw 0vw rgba(203, 203, 203, 0.1);
+	font-family: PingFang-SC-Regular;
+    font-weight: normal;
+	font-stretch: normal;
+    position: fixed;
+    top: 0vw;
+    left: 0vw;
+    z-index: 10000;
+}
+
+.search-placeholder {
+	font-size: 3.73vw;
+	line-height: 9.07vw;
+	color: #999999;
+    text-align: center;
+}
+
+.search-input {
+    width: 92vw;
+	height: 9.07vw;
+	background-color: #f7f7f7;
+	border-radius: 4.53vw;
+    box-sizing: border-box;
+    padding: 0px 4vw;
+    position: relative;
+}
+
+.search-icon {
+    width: 3.73vw;
+	height: 3.73vw;
+    position: absolute;
+    top: 52%;
+    left: 34%;
+    z-index: 100;
+    transform: translateY(-50%);
+}

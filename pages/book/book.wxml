@@ -1,7 +1,13 @@
 <view class="book">
-    <view class="book-head"></view>
+    <view class="book-head">
+        <v-search-component />
+    </view>
 
-    <!-- <text class="book-title">精选</text> -->
+    <image
+        src="../../assets/book/recommend.png"
+        class='book-recommend'
+        >
+    </image>
 
     <view class="book-container">
         <view
