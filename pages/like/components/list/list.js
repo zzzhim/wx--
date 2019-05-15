@@ -1,3 +1,5 @@
 Component({
-    
+    properties: {
+        detail: Object
+    }
 })

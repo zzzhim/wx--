@@ -1,11 +1,12 @@
-// pages/like/like.js
+import $request from "../../utils/request.js"
+
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-
+        list: []
     },
 
     /**
@@ -19,7 +20,14 @@ Page({
      * 生命周期函数--监听页面初次渲染完成
      */
     onReady: function () {
-
+        $request('/classic/favor')
+            .then(res => {
+                console.log(res)
+                this.setData({ list: res })
+            })
+            .catch(err => {
+                console.log(err)
+            })
     },
 
     /**

@@ -9,8 +9,8 @@
         </image>
 
         <view class="content-item">
-            <view class="content-list" wx:for="{{ 10 }}">
-                <v-list />
+            <view class="content-list" wx:for="{{ list }}" wx:key="{{ index }}">
+                <v-list detail="{{ item }}"/>
             </view>
         </view>
     </view>
