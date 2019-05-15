@@ -1,5 +1,6 @@
 {
     "usingComponents": {
-        "v-header": "./components/header/header"
+        "v-header": "./components/header/header",
+        "v-list": "./components/list/list"
     }
 }

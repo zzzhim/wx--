@@ -1,0 +1,17 @@
+<view class="block">
+    <view class="block-header">
+        <view class="block-header-title">电影</view>
+        <view class="block-header-like">
+            <image src="/assets/movie/like.png"></image>
+            <text>233</text>
+        </view>
+    </view>
+    <view class="block-content">
+        <image class="block-content-bg" src=""></image>
+    </view>
+    <view class="block-footer">
+        <view>
+            有的人浅薄，有的人金玉其表败絮其中。有111111111
+        </view>
+    </view>
+</view>

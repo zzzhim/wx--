@@ -1,0 +1,28 @@
+.content {
+    background-color: #f7f7f7;
+    min-height: calc(100vh - 74.13vw);
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 14.8vw;
+    padding: 14.8vw 4vw 0vw 4vw;
+}
+
+.content-like {
+    width: 12.93vw;
+	height: 5.2vw;
+    display: block;
+    position: absolute;
+    top: 7.2vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content-item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content-list {
+    margin-bottom: 4vw;
+}

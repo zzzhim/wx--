@@ -1,3 +1,17 @@
 <view>
     <v-header />
+
+    <view class='content'>
+        <image
+            src="../../assets/like/like.png"
+            class='content-like'
+            >
+        </image>
+
+        <view class="content-item">
+            <view class="content-list" wx:for="{{ 10 }}">
+                <v-list />
+            </view>
+        </view>
+    </view>
 </view>

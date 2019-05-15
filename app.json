@@ -10,7 +10,8 @@
         "pages/components/Player/Player",
         "pages/components/Book/Book",
         "pages/components/Search/Search",
-        "pages/like/components/header/header"
+        "pages/like/components/header/header",
+        "pages/like/components/list/list"
     ],
     "requiredBackgroundModes": [
         "audio"
