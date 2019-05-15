@@ -1,0 +1,23 @@
+<view class="header">
+    <view class="header-container">
+        <image src="/assets/like/bg.png" class="header-bg"></image>
+
+        <view class="header-avatar">
+            <image src="/assets/like/bg.png"></image>
+            <text>zzzhim</text>
+        </view>
+
+        <view class="header-nav">
+            <view class="header-nav-left">
+                <view class="header-nav-left-image">
+                    <image src="/assets/like/about.png"></image>
+                </view>
+                <text class="header-nav-left-text">关于我们</text>
+            </view>
+            <view class="header-nav-right">
+                <view style="text-align: center;">17</view>
+                <text class="header-nav-right-text">我的书单</text>
+            </view>
+        </view>
+    </view>
+</view>

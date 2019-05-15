@@ -1,15 +1,16 @@
 {
     "pages": [
-        "pages/book/book",
-        "pages/home/home",
         "pages/like/like",
+        "pages/home/home",
+        "pages/book/book",
         "pages/components/Head/Head",
         "pages/components/Music/Music",
         "pages/components/Banner/Banner",
         "pages/components/Like/Like",
         "pages/components/Player/Player",
         "pages/components/Book/Book",
-        "pages/components/Search/Search"
+        "pages/components/Search/Search",
+        "pages/like/components/header/header"
     ],
     "requiredBackgroundModes": [
         "audio"
@@ -45,5 +46,6 @@
                 "selectedIconPath": "assets/tab-icon/my-active.png"
             }
         ]
-    }
+    },
+    "sitemapLocation": "sitemap.json"
 }

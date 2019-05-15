@@ -1,0 +1,66 @@
+.header-container {
+    width: 100vw;
+    height: 74.13vw;
+    position: relative;
+}
+.header-bg {
+    width: 100%;
+    height: 74.13vw;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.header-avatar {
+    width: 16.13vw;
+	height: 16.13vw;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.header-avatar > image {
+    width: 16.13vw;
+	height: 16.13vw;
+    border-radius: 50%;
+}
+
+.header-avatar > text {
+	font-size: 4.53vw;
+	line-height: 6.67vw;
+	letter-spacing: 0vw;
+	color: #000000;
+}
+
+.header-nav {
+    width: 100vw;
+    position: absolute;
+    bottom: 6%;
+    left: 0%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-nav-left {
+    width: 13vw;
+}
+
+.header-nav-left-image {
+    text-align: center;
+}
+
+.header-nav-left-image image {
+    width: 4.53vw;
+	height: 4.53vw;
+}
+
+.header-nav-left-text, .header-nav-right-text {
+    font-size: 3.2vw;
+	line-height: 5.33vw;
+	letter-spacing: 0vw;
+	color: #999999;
+}
