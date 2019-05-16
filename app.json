@@ -1,8 +1,9 @@
 {
     "pages": [
-        "pages/like/like",
+        "pages/search/search",
         "pages/home/home",
         "pages/book/book",
+        "pages/like/like",
         "pages/likeDetail/likeDetail",
         "pages/components/Head/Head",
         "pages/components/Music/Music",
@@ -12,7 +13,9 @@
         "pages/components/Book/Book",
         "pages/components/Search/Search",
         "pages/like/components/header/header",
-        "pages/like/components/list/list"
+        "pages/like/components/list/list",
+        "pages/search/components/header/header",
+        "pages/search/components/list/list"
     ],
     "requiredBackgroundModes": [
         "audio"

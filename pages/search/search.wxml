@@ -1,0 +1,11 @@
+<view>
+    <view style="height: 14.4vw;">
+        <v-header />
+    </view>
+    <view>
+        <v-list />
+    </view>
+    <view>
+        <v-list />
+    </view>
+</view>
