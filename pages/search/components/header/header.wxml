@@ -4,6 +4,7 @@
         placeholder="搜索图书名称"
         class="search-input"
         type="text"
+        bindinput="handleInput"
         >
     </input>
     <image

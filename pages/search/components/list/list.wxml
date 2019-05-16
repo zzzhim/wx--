@@ -1,12 +1,11 @@
 <view class="block">
-    <view class="title">历史搜索</view>
+    <view class="title">{{ title }}</view>
     <view class="content">
-        <text>假如真有时光机</text>
-        <text>格林童话</text>
-        <text>格林童话</text>
-        <text>假如真有时光机</text>
-        <text>雷雨</text>
-        <text>格林童话</text>
-        <text>大家都有病</text>
+        <text
+            data-key="{{ item }}"
+            wx:for="{{ content }}"
+            wx:key="index"
+            bindtap="handleClick">{{ item }}
+        </text>
     </view>
 </view>

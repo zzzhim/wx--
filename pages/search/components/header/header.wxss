@@ -30,12 +30,13 @@
 	border-radius: 4.53vw;
     box-sizing: border-box;
     padding: 0px 4vw;
+    padding-left: 10vw;
     position: relative;
 	font-size: 3.73vw;
 }
 
 .search-icon {
-    width: 3.73vw;
+    width: 3.73vw;  
 	height: 3.73vw;
     position: absolute;
     top: 50%;

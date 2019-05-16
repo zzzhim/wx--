@@ -1,11 +1,11 @@
 <view>
     <view style="height: 14.4vw;">
-        <v-header />
+        <v-header bind:onSearch="onSearch"/>
     </view>
     <view>
         <v-list />
     </view>
     <view>
-        <v-list />
+        <v-list title="热门搜索" content="{{ hot }}"/>
     </view>
 </view>
