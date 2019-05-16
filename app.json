@@ -3,6 +3,7 @@
         "pages/like/like",
         "pages/home/home",
         "pages/book/book",
+        "pages/likeDetail/likeDetail",
         "pages/components/Head/Head",
         "pages/components/Music/Music",
         "pages/components/Banner/Banner",

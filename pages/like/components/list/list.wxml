@@ -1,4 +1,4 @@
-<view class="block">
+<view class="block" bindtap="onClick">
     <view class="block-header">
         <view class="block-header-title">{{
             detail.type === 100
@@ -13,7 +13,8 @@
         </view>
     </view>
     <view class="block-content">
-        <image class="block-content-bg" src="{{ detail.image }}"></image>
+        <image class="block-content-bg" src="{{ detail.image }}" wx:if="{{ detail.type !== 200 }}"></image>
+        <image class="block-content-raduis" src="{{ detail.image }}" wx:else></image>
     </view>
     <view class="block-footer">
         <view>

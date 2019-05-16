@@ -22,7 +22,6 @@ Page({
     onReady: function () {
         $request('/classic/favor')
             .then(res => {
-                console.log(res)
                 this.setData({ list: res })
             })
             .catch(err => {

@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "v-head-component": "/pages/components/Head/Head",
+        "v-banner-component": "/pages/components/Banner/Banner",
+        "v-player-component": "/pages/components/Player/Player"
+    }
+}

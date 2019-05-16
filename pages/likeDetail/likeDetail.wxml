@@ -1,0 +1,18 @@
+
+<view class='home'>
+    <!-- 头部 -->
+    <v-head-component bind:on-click="GetCertain" movieData="{{ movieData }}" />
+
+    <v-banner-component movieData="{{ movieData }}" wx:if="{{ movieData.type != 200 }}" />
+    <v-player-component movieData="{{ movieData }}" wx:else />
+
+    <view class='home-footer'>
+        <!-- 内容 -->
+        <view
+            style="{{ movieData.type == 100 ? 'text-align: left' : '' }}"
+            class='home-footer-text'
+            >
+            {{ movieData.content }}
+        </view>
+    </view>
+</view>

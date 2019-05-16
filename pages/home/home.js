@@ -51,5 +51,4 @@ Page({
         //         this.setData({ movieData: res })
         //     })
     }
-
 })

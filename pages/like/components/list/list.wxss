@@ -46,13 +46,21 @@
 .block-content {
     width: 44vw;
 	height: 32vw;
-	background-color: #dcdcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .block-content-bg {
     width: 44vw;
 	height: 32vw;
+}
+
+.block-content-raduis {
+    width: 26.67vw;
+	height: 26.67vw;
     display: block;
+    border-radius: 50%;
 }
 
 .block-footer {
