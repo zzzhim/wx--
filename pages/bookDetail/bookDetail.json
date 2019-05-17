@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "v-search-component": "/pages/components/Search/Search",
+        "v-header": "./components/header/header",
+        "v-comment": "./components/comment/comment"
+    }
+}

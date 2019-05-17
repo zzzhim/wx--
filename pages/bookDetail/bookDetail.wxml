@@ -1,0 +1,11 @@
+<view class="detail">
+    <view class="detail-head">
+        <v-search-component />
+    </view>
+    <view style="margin-top: 2.5vw">
+        <v-header />
+    </view>
+    <view style="margin-top: 2.5vw">
+        <v-comment />
+    </view>
+</view>

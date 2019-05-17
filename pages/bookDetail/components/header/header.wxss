@@ -1,0 +1,31 @@
+.header {
+    width: 100vw;
+	height: 65.33vw;
+	background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 5.5vw;
+}
+
+.image {
+    width: 27.2vw;
+	height: 40.67vw;
+    display: block;
+}
+
+.title {
+    font-size: 5.07vw;
+	line-height: 1;
+	letter-spacing: 0.25vw;
+	color: #000000;
+}
+
+.name {
+	font-size: 3.73vw;
+	line-height: 1;
+	letter-spacing: 0vw;
+	color: #999999;
+}

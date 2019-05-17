@@ -1,0 +1,39 @@
+.comment {
+    width: 99.73vw;
+	height: 51.73vw;
+	background-color: #ffffff;
+}
+
+.title {
+	font-size: 4vw;
+	line-height: 1;
+	letter-spacing: 0vw;
+	color: #000000;
+}
+
+.block {
+    height: 6.93vw;
+    line-height: 6.93vw;
+    padding: 0px 3.73vw;
+	background-color: #fffadd;
+	border-radius: 3.47vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block > text:first-child {
+    font-size: 3.2vw;
+	line-height: 6.93vw;
+	letter-spacing: 0vw;
+	color: #666666;
+}
+
+.block > text:last-child {
+    font-size: 2.67vw;
+	line-height: 6.93vw;
+	letter-spacing: 0vw;
+	color: #bbbbbb;
+    margin-left: 1.8vw;
+}

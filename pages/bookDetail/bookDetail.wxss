@@ -1,0 +1,12 @@
+.detail {
+    background-color: #f7f7f7;
+    min-height: 100vh;
+    position: relative;
+}
+
+.detail-head {
+    width: 99.87vw;
+	height: 14.4vw;
+	background-color: #ffffff;
+	box-shadow: 0vw 0.27vw 1.33vw 0vw rgba(203, 203, 203, 0.1);
+}

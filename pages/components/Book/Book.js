@@ -19,8 +19,9 @@ Component({
                 .then(res => {
                     this.setData({ comment: res.comments.length })
                 })
+        },
+        onClick() {
+            console.log(this.properties.book.id)
         }
-    },
-
-    
+    }
 })

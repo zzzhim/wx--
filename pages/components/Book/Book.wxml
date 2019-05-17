@@ -1,4 +1,4 @@
-<view class="book-container-box">
+<view class="book-container-box" bindtap="onClick">
     <image
         class="book-container-box-banner"
         src='{{ book.image }}'
