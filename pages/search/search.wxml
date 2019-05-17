@@ -1,11 +1,34 @@
 <view>
     <view style="height: 14.4vw;">
-        <v-header bind:onSearch="onSearch"/>
+        <v-header bind:onSearch="onSearch" key="{{ key }}" />
     </view>
-    <view>
-        <v-list />
+
+    <view wx:if="{{ key.length === 0 }}">
+        <view wx:if="{{ his.length }}">
+            <v-list title="历史搜索" bind:onSearch="onSearch" content="{{ his }}" />
+        </view>
+        <view wx:if="{{ hot.length }}">
+            <v-list title="热门搜索" bind:onSearch="onSearch" content="{{ hot }}"/>
+        </view>
     </view>
-    <view>
-        <v-list title="热门搜索" content="{{ hot }}"/>
+    <scroll-view
+        scroll-y="{{ true }}"
+        style="height: calc(100vh - 14.4vw);"
+        lower-threshold="{{ 50 }}"
+        bindscrolltolower="onScrollBottom"
+        wx:else>
+        <view class="book-container">
+                <view
+                    class="book-container-block"
+                    wx:for="{{ list }}"
+                    wx:key="{{ index }}"
+                    >
+                    <v-book-component book="{{ item }}" />
+                </view>
+        </view>
+    </scroll-view>
+
+    <view wx:if="{{ show }}" style="text-align: center;">
+        图书不存在
     </view>
 </view>

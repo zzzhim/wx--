@@ -1,6 +1,7 @@
 {
     "usingComponents": {
         "v-header": "./components/header/header",
-        "v-list": "./components/list/list"
+        "v-list": "./components/list/list",
+        "v-book-component": "/pages/components/Book/Book"
     }
 }

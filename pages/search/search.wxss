@@ -1,0 +1,12 @@
+.book-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 12vw;
+    margin-top: 8vw;
+}
+
+.book-container-block {
+   margin-bottom: 8vw;
+}

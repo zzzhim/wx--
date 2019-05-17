@@ -4,7 +4,9 @@
         placeholder="搜索图书名称"
         class="search-input"
         type="text"
-        bindinput="handleInput"
+        bindconfirm="handleInput"
+        confirm-type="search"
+        value="{{ key }}"
         >
     </input>
     <image
@@ -12,5 +14,5 @@
         src="../../../../assets/book/search.png"
         >
     </image>
-    <view class="search-btn">取消</view>
+    <view class="search-btn" bindtap="onClick">取消</view>
 </view>
