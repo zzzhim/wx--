@@ -1,11 +1,15 @@
 <view class="detail">
-    <view class="detail-head">
-        <v-search-component />
+    <view style="margin-top: 2.5vw">
+        <v-header detail="{{ detail }}" />
     </view>
     <view style="margin-top: 2.5vw">
-        <v-header />
+        <v-comment comments="{{ comments }}" />
+    </view>
+    <view style="margin-top: 2.5vw" class="content">
+        <view class="content-title">内容简介</view>
+        <view class="content-text">{{ detail.summary }}</view>
     </view>
     <view style="margin-top: 2.5vw">
-        <v-comment />
+        <v-info detail="{{ detail }}" />
     </view>
 </view>

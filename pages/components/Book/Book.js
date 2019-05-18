@@ -21,7 +21,10 @@ Component({
                 })
         },
         onClick() {
-            console.log(this.properties.book.id)
+            const id = this.properties.book.id
+            wx.navigateTo({
+                url: `/pages/bookDetail/bookDetail?id=${id}`
+            })
         }
     }
 })

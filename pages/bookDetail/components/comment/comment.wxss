@@ -1,21 +1,34 @@
 .comment {
     width: 99.73vw;
-	height: 51.73vw;
+	/* height: 51.73vw; */
+    padding: 4.13vw 0vw;
 	background-color: #ffffff;
 }
 
+.content {
+    box-sizing: border-box;
+    padding: 0 3.3vw;
+    padding-left: -1.6vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .title {
+    margin-bottom: 1.46vw;
 	font-size: 4vw;
 	line-height: 1;
 	letter-spacing: 0vw;
 	color: #000000;
+    text-align: center;
 }
 
 .block {
     height: 6.93vw;
     line-height: 6.93vw;
+    margin-top: 2.67vw;
+    margin-left: 1.6vw;
     padding: 0px 3.73vw;
-	background-color: #fffadd;
+	background-color: #f7f7f7;
 	border-radius: 3.47vw;
     text-align: center;
     display: flex;

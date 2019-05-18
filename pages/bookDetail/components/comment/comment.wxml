@@ -1,9 +1,9 @@
 <view class="comment">
     <view class="title">短评</view>
-    <view>
-        <view class="block">
-            <text>你好哇，李银河</text>
-            <text>+ 759</text>
+    <view class="content">
+        <view style='{{ index == 0 ? "background: #fffadd;" : (index === 1 ?  "background: #eefaff;" : null) }}' class="block" wx:for="{{ comments }}" wx:key="{{ item.content }}">
+            <text>{{ item.content }}</text>
+            <text>+ {{ item.nums }}</text>
         </view>
     </view>
 </view>

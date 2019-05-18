@@ -1,0 +1,25 @@
+<view class="info">
+    <view class="title">书本信息</view>
+    <view class="block">
+        <view class="list">
+            <text class="left">出版社</text>
+            <text class="right">{{ detail.publisher }}</text>
+        </view>
+        <view class="list">
+            <text class="left">页数</text>
+            <text class="right">{{ detail.pages }}</text>
+        </view>
+        <view class="list">
+            <text class="left">定价</text>
+            <text class="right">{{ detail.price }}</text>
+        </view>
+        <view class="list">
+            <text class="left">精装</text>
+            <text class="right">{{ detail.binding }}</text>
+        </view>
+        <view class="list">
+            <text class="left">书号</text>
+            <text class="right">{{ detail.isbn }}</text>
+        </view>
+    </view>
+</view>
